@@ -115,7 +115,7 @@ $("#log").on("click",function(){
   description:'The classic spirit of this model is stimulated by the contrast between the architecture of the shoe and the thickness of a highly structured overhanging sole.',
   type:'shoes',
   img:'../imgs/2.jpg.webp',
-  gender:'women',
+  gender:'woman',
   ref:2
   },
   {name: 'RED T-SHIRT FOR MAN',
@@ -155,8 +155,8 @@ $("#log").on("click",function(){
   description:'This footwear masterpiece effortlessly blends classic design with modern comfort',
   type:'shoe',
   img:'../imgs/6.webp',
-  gender:'women',
-  ref:6
+  gender:'woman',
+  ref: 6
   },
   {name:'WHITE DEBARDER',
   taille:'l-xl-xxl',
@@ -205,8 +205,8 @@ $("#log").on("click",function(){
   description:'cool vest for your favorite children , for the coldest nights',
   type:'t-shirt',
   img:'../imgs/11.jpg',
-  gender:'man',
-  ref:11
+  gender:'kids',
+  ref: 11
   },
   {name: 'BLUE KENZO T-SHIRT',
   taille:'s',
@@ -215,8 +215,8 @@ $("#log").on("click",function(){
   description:'only for you only for the best kid full sleeves',
   type:'t-shirt',
   img:'../imgs/12.jpg',
-  gender:'man',
-  ref:12
+  gender:'kids',
+  ref: 12
   },
   {name: 'RED KENZO T-SHIRT',
   taille:'s',
@@ -225,8 +225,8 @@ $("#log").on("click",function(){
   description:'red t-shirt with full sleeves and 100% cotton',
   type:'t-shirt',
   img:'../imgs/13.jpg',
-  gender:'man',
-  ref:13
+  gender:'kids',
+  ref: 13
   },
   {name: 'black class shoe',
   taille:42,
@@ -255,8 +255,8 @@ $("#log").on("click",function(){
   description:'for your coldest nights get warm high quality t-shirt',
   type:'t-shirt',
   img:'../imgs/17.jpg',
-  gender:'man',
-  ref:16
+  gender:'kids',
+  ref: 16
   },
   {name:'warm white sweet',
   taille:'s-m-l',
@@ -341,7 +341,7 @@ $("#allCards").append(`<div class="card">
 })
 
 // Filter men
-$("#men").on("click",function(){
+$("#man").on("click",function(){
   $("#allCards").empty()
   for(var i = 0; i < datashop.length ; i++){
         if( datashop[i].gender === "man" ){
@@ -359,10 +359,10 @@ $("#men").on("click",function(){
 })
 
 // Filter women
-$("#women").on("click",function(){
+$("#woman").on("click",function(){
   $("#allCards").empty()
   for(var i = 0; i < datashop.length ; i++){
-        if( datashop[i].gender === "women" ){
+        if( datashop[i].gender === "woman" ){
  $("#allCards").append(`<div class="card">
     <img src=${datashop[i].img} alt=${datashop[i].type} style="width:100%">
     <h1>${datashop[i].name}</h1>
