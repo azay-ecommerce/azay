@@ -323,7 +323,6 @@ $("#log").on("click",function(){
   // Filter search
   $(".search-btn").on("click",function(){
     var searchVal = $("#valsearch").val()
-    console.log("this is val",searchVal )
   $("#allCards").empty()
   $("#allCards1").empty()
   for(var i = 0; i < datashop.length ; i++){
